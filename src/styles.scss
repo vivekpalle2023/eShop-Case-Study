@@ -1,1 +1,103 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+@import url('../node_modules/bootstrap/dist/css/bootstrap.css');                       
+@import 'app/variables/fontsizes.scss', 'app/variables/padding.scss';
+@import 'app/variables/fontcolors.scss';
+@import 'app/variables/fontfamily.scss';
+
+@import url('../node_modules/font-awesome/css/font-awesome.css');
+
+.header{
+    display: grid;
+    width: auto;
+    grid-template-columns: 3fr 3fr 1fr 1fr 1fr;
+    border-bottom-style: groove;
+    padding: var(--padding-20);
+}
+
+.title{
+    font-size: $fontsizelarge;
+    font-family: $fontfamilyprimary;
+    color: $fontcolorheading;
+}
+.title1{
+        font-size: $fontsizemedium1;
+    font-family: $fontfamilyprimary;
+    color: $fontcolorheading;
+}
+.headersearch{
+    border-left: none;
+    padding-top: var(--padding-5);
+    padding-left: var(--padding-10);
+}
+
+.headerlinks{
+    font-size: $fontsizemedium2;
+    font-family: $fontfamilyprimary;
+    color: $fontcolortext;
+    padding-top: var(--padding-10);
+    padding-left: var(--padding-10);
+    border-left: solid 1px;
+}
+.headerlinks1{
+    font-size: $fontsizemedium2;
+    font-family: $fontfamilyprimary;
+    color: $fontcolortext;
+    border-left: solid 1px;
+    padding-left: 30px;
+}
+
+.carticon{
+    font-size: $fontsizemedium2;
+    font-family: $fontfamilyprimary;
+    color: $fontcolortext;
+}
+
+.links{
+    text-decoration: none;
+}
+
+.productitems{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    border: solid 1px;
+    background-color: azure;
+}
+
+.productlistitems{
+    display: flex;
+    padding: var(--padding-15);
+    font-family: $fontfamilyprimary;
+    border: groove 1px;
+}
+
+.image1{
+    height: 100px;
+}
+
+.productcontent{
+    font-size: $fontsizesmall;
+    font-family: $fontfamilyprimary;
+    color: $fontcolortext;
+    padding: var(--padding-10);
+    
+}
+
+.productheading{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+}
+
+h6{
+    text-align: right;
+}
+
+.cartButton{
+    margin-right: 0px;
+    background-color: rgb(108, 108, 248);
+    border-radius: 5px;
+    color: aliceblue;
+}

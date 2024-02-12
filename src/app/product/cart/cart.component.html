@@ -1,0 +1,31 @@
+
+<br>
+<div class="card">
+    <div class="title1"> 
+        <i class="fa fa-shopping-cart" style="font-size: 1em; color: red;"></i>
+        Item(s) in Cart</div>
+    <div class="card-body">
+        <table class="table">
+            <tbody>
+                   <tr *ngFor="let cartline of cart">
+                    <td>{{cartline.ProductName}}</td>
+                    <td>{{cartline.Price}}</td>
+                    <td><button (click)="removeItem(cartline)"> Remove</button></td>
+                </tr>
+                <tr *ngIf="cart.length==0">
+                <td>{{statusofcart}}</td>
+                </tr>
+                <tr>
+                    <td> <b>Total Price</b></td>
+                    <td> {{totalPrice}}</td>
+                </tr>
+                <tr>
+                    <td> </td>
+                    <td><button>Proceed</button></td>
+                    
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+</div>

@@ -1,0 +1,29 @@
+
+<!-- <button class="cartButton" (click)="togglecartview()"> {{isCartOpen? 'Hide':'Show'}} cart</button> -->
+
+<!-- <app-cart [cartitem]="cartitems" *ngIf="isCartOpen"></app-cart> -->
+
+<div class="productheading">
+    <div class="title1">Products List</div>
+    <!-- <h6>Cart count: {{count}}</h6> -->
+</div>
+
+<div class="productitems">
+    <div *ngFor="let product of Products" class="productlistitems">
+        <div>
+            <div><img class="image1" [src]="product.imgurl"> </div>
+        </div>
+        <div>
+            
+            <div class="productcontent"><b>{{product.ProductName}}</b></div>
+            <div class="productcontent">{{product.Price | currency:'INR'}}</div>
+
+            <div class="productcontent">
+                <button class=".btn-success" type="submit" (click)="addtocart(product)">
+                 Add to Cart</button></div>
+        
+        </div>
+    </div>
+
+</div>
+
